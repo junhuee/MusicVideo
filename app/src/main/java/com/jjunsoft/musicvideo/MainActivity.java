@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     TextView email;
     TextView nickname;
     SharedPreferences pref;
- 
+
 
 
 
