@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ROOKIE STAR</string>
+
+
+    <string name="facebook_app_id">209506202970794</string>
+    <string name="fb_login_protocol_scheme">fb209506202970794</string>
+
+</resources>

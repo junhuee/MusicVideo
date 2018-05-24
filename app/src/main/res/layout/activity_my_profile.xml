@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jjunsoft.musicvideo.MyProfileActivity"
+    android:background="#eaeaea">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/profile_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="내정보"
+            android:background="@color/black"
+            app:titleTextColor="@color/white">
+
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/white">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/koala"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/profile_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:text="Hello"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"/>
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="E-mail"
+            android:gravity="center"
+            android:layout_marginTop="8dp"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:text="내 동영상"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:onClick="clickMyvideo"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/myProfile_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="로그인/로그아웃"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:onClick="clickLogin"/>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="회원탈퇴"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:onClick="clickSecession"/>
+
+    
+
+        
+
+
+
+
+</LinearLayout>

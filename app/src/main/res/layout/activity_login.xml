@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/login"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jjunsoft.musicvideo.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rookiestar"
+            android:layout_gravity="center"
+            android:layout_marginBottom="100dp"
+            android:layout_marginTop="50dp"/>
+
+
+        <!--<com.facebook.login.widget.LoginButton-->
+            <!--android:id="@+id/login_button"-->
+            <!--android:layout_width="180dp"-->
+            <!--android:layout_height="186dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginBottom="30dp"-->
+            <!--android:layout_marginTop="30dp"/>-->
+
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="185dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/login_logout"
+            android:clickable="true"
+            android:onClick="clicklogout">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/google"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="로그아웃"
+                android:layout_gravity="center"
+                android:layout_marginLeft="18dp"
+                android:textStyle="bold"/>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
